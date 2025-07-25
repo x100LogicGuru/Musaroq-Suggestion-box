@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Musaroq Suggestion Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="card-container">
+      <div class="flex-container">
+        <div class="logo-img">
+          <img src="Asset /m2logs.png" alt="  Musaroq Logo" />
+        </div>
+        <div class="header-text">
+          <h1>We Value Your Suggestions</h1>
+          <p>
+            Help us improve by sharing your feedback, ideas or requests. Your
+            messages helps us grow and searve you better
+          </p>
+        </div>
+      </div>
+      <div class="form-container">
+        <form action="" method="post">
+          <label for="Name">Your Name</label>
+          <input
+            type="text"
+            id="Name"
+            name="customerName"
+            placeholder="Customer Name"
+            required
+          />
+
+          <label for="Message">Enter Suggestion</label>
+          <textarea
+            id="Message"
+            name="Message"
+            placeholder="We’d love to hear from you!"
+            required
+            rows="4"
+          ></textarea>
+          <div>
+            <button class="btn">slide to send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
