@@ -8,15 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
+    <!-- EmailJS SDK -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
   </head>
   <body>
     <div class="card-container">
@@ -35,24 +34,25 @@
       <div class="form-container">
         <form action="" method="post">
           <label for="Name">Your Name</label>
-          <input
-            type="text"
-            id="Name"
-            name="customerName"
-            placeholder="Customer Name"
-            required
-          />
+          <input type="text" id="Name" name="customerName" required />
 
           <label for="Message">Enter Suggestion</label>
-          <textarea
-            id="Message"
-            name="Message"
-            placeholder="We’d love to hear from you!"
-            required
-            rows="4"
-          ></textarea>
+          <textarea id="Message" name="Message" required rows="4"></textarea>
+
+          <!-- Error message display -->
+          <div
+            id="error-message"
+            style="
+              display: none;
+              color: #ed3237;
+              font-size: 14px;
+              margin-top: 10px;
+              text-align: center;
+            "
+          ></div>
+
           <div>
-            <button class="btn">slide to send</button>
+            <button class="btn">SEND</button>
           </div>
         </form>
       </div>
