@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="Asset /MUSAROQ LOGO.png" type="image/png" />
     <title>Musaroq Suggestion Form</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -11,6 +12,9 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <!-- EmailJS SDK -->
     <script
       type="text/javascript"
@@ -24,7 +28,7 @@
           <img src="Asset /m2logs.png" alt="  Musaroq Logo" />
         </div>
         <div class="header-text">
-          <h1>We Value Your Suggestions</h1>
+          <h1>We Value Your <span class="highlight-suggestion">Suggestions</span> </h1>
           <p>
             Help us improve by sharing your feedback, ideas or requests. Your
             messages helps us grow and searve you better
@@ -33,30 +37,37 @@
       </div>
       <div class="form-container">
         <form action="" method="post">
-          <label for="Name">Your Name</label>
+          <label for="Name">Your Name:</label>
           <input type="text" id="Name" name="customerName" required />
 
-          <label for="Message">Enter Suggestion</label>
+          <label for="Message">Enter Suggestion:</label>
           <textarea id="Message" name="Message" required rows="4"></textarea>
 
           <!-- Error message display -->
-          <div
-            id="error-message"
-            style="
-              display: none;
-              color: #ed3237;
-              font-size: 14px;
-              margin-top: 10px;
-              text-align: center;
-            "
-          ></div>
+          <div id="error-message"></div>
 
           <div>
-            <button class="btn">SEND</button>
+            <button class="btn">SUBMIT</button>
           </div>
         </form>
       </div>
+      <p class="bottom-feedback">
+  Your <span class="highlight-feedback">Feedback</span> Helps Us Improve And Grow
+</p>
     </div>
+
+    <div class="overlay hidden">
+      <div class="overlay-card thanks-card hidden">
+        <div style="font-size: 3rem; text-align: center; margin-bottom: 0rem;">
+          🎉
+        </div>
+        <h1>Thanks For Sharing</h1>
+        <img src="Asset /m2logs.png" alt="Musaroq Logo" />
+      </div>
+    </div>
+    
+    
     <script src="script.js"></script>
   </body>
 </html>
+
