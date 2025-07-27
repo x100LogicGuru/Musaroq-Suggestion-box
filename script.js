@@ -142,7 +142,7 @@ document.addEventListener("DOMContentLoaded", function () {
     hideError();
     sendButton.classList.remove("clicked");
     sendButton.textContent = "SUBMIT";
-    sendButton.style.background = "linear-gradient(90deg, #ed3237, #3e4095)";
+    sendButton.style.background = " #ed3237";
     // Retrigger header animation ONLY here
     const headerText = document.querySelector(".header-text");
     if (headerText) {
