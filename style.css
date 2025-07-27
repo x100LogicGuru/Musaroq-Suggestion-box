@@ -150,7 +150,7 @@ input,
 textarea {
   width: 100%;
   padding: 0.5rem 0.5rem;
-  border: 1.5px solid #383a86;
+  border: 0.1px solid #5a5cd6;
   border-radius: 8px;
   font-size: 0.95rem;
   background: #f7f7fa;
