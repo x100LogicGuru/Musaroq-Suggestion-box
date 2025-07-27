@@ -150,10 +150,10 @@ input,
 textarea {
   width: 100%;
   padding: 0.5rem 0.5rem;
-  border: 0.1px solid #5a5cd6;
+  border: 0.1px solid #EEEFF1;
   border-radius: 8px;
   font-size: 0.95rem;
-  background: #f7f7fa;
+  background: #EEEFF1;
   color: #222;
   transition: border-color 0.2s, background 0.2s;
   resize: none;
@@ -161,9 +161,9 @@ textarea {
 
 input:focus,
 textarea:focus {
-  border-color: #5a5cd6;
+
   outline: none;
-  background: #fff;
+  background: #EEEFF1;
   font-size: 12px;
 }
 
