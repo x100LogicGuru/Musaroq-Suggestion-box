@@ -601,6 +601,11 @@ form > div {
 }
 
 @media (max-width: 500px) {
+  .header-text h1 {
+    font-size: 24.1px;
+    
+  }
+
   .header-text p {
     display: none !important;
   }
@@ -614,7 +619,7 @@ form > div {
   }
 
 }
-
+}
 .highlight-feedback {
   font-weight: bold;
   background: linear-gradient(90deg, #ed3237, #3e4095);
@@ -623,6 +628,7 @@ form > div {
   background-clip: text;
   color: transparent;
 }
+
 .highlight-suggestion {
   font-weight: bold;
   background-color: #3e4095;
